@@ -164,6 +164,14 @@ public class Chart extends Composite implements Listener {
         plotArea.setBackground(color);
     }
 
+    public void addCustomPaintListener(ICustomPaintListener listener) {
+    	plotArea.addCustomPaintListener(listener);
+    }
+    
+    public void removeCustomPaintListener(ICustomPaintListener listener) {
+    	plotArea.removeCustomPaintListener(listener);
+    }
+    
     /**
      * Sets the state of chart orientation. The horizontal orientation means
      * that X axis is horizontal as usual, while the vertical orientation means
